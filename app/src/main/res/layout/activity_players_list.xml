@@ -8,13 +8,13 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btnAddCharacter"
+        android:id="@+id/btnAddPlayer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_add_player" />
+        android:text="@string/btn_add_character" />
 
     <ListView
-        android:id="@+id/lsCharacters"
+        android:id="@+id/lsPlayers"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>

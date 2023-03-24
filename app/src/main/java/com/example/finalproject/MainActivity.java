@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
                 i = new Intent(this, CharactersListActivity.class);
                 startActivity(i);
                 break;
+            case "btnPlayerList":
+                i = new Intent(this, PlayersListActivity.class);
+                startActivity(i);
+                break;
         }
     }
 }

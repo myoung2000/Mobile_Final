@@ -6,6 +6,12 @@ public class Players {
     private String lastName;
     private boolean active;
 
+    public Players(String firstName, String lastName, boolean active) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.active = active;
+    }
+
     public long getId() {
         return id;
     }
@@ -38,9 +44,34 @@ public class Players {
         this.active = active;
     }
 
+    public Players(long id, String firstName, String lastName, boolean active) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.active = active;
+    }
+
     @Override
     public String toString(){
         String msg = "ID: " + id + " NAME: " + firstName + " " + lastName + " ACTIVE: " + active;
         return msg;
+    }
+
+    public boolean isValid(){
+
+
+        if(this.firstName.isEmpty()){
+            return false;
+        }else if(this.firstName == null){
+            return false;
+        }
+
+        if(this.lastName.isEmpty()){
+            return false;
+        }else if(this.lastName == null){
+            return false;
+        }
+
+        return true;
     }
 }
