@@ -7,4 +7,14 @@
     <string name="chk_Active">Active</string>
     <string name="btnSave">Save</string>
     <string name="btnDelete">Delete</string>
+    <string name="lblName">Character Name</string>
+    <string name="lblBuild">Build/Class</string>
+    <string name="lblRace">Race</string>
+    <string name="lblLvl">Level</string>
+    <string name="lblCreated">Created on</string>
+    <string name="btnCharacterList">Characters</string>
+    <string name="btnPlayerList">Players</string>
+    <string name="btnBack">Back to Home</string>
+    <string name="btnDate">Pick Date</string>
+    
 </resources>

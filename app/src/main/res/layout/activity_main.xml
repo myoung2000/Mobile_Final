@@ -7,31 +7,44 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/partycomp3">
 
-    <Button
-        android:id="@+id/btnCharacterList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="128dp"
-        android:onClick="buttonPressed"/>
 
-    <Button
-        android:id="@+id/btnPlayerList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="128dp"
-        android:onClick="buttonPressed"/>
+        <Button
+            android:id="@+id/btnCharacterList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="150dp"
+            android:onClick="buttonPressed"
+            android:text="@string/btnCharacterList"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/party">
+
+        <Button
+            android:id="@+id/btnPlayerList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="150dp"
+            android:onClick="buttonPressed"
+            android:text="@string/btnPlayerList" />
+
+    </LinearLayout>
+
 
 </LinearLayout>

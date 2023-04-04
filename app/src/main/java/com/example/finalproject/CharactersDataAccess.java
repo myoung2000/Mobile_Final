@@ -77,7 +77,7 @@ public class CharactersDataAccess {
         }
     }
 
-    public int deleteTask(Characters c){
+    public int deleteCharacter(Characters c){
         for(Characters currentCharacters : allCharacters){
             if(currentCharacters.getId() == c.getId()){
                 allCharacters.remove(currentCharacters);

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CharactersDetailsActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblName" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType=""/>
+
+    <TextView
+        android:id="@+id/lblBuild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblBuild" />
+
+    <EditText
+        android:id="@+id/txtBuild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType=""/>
+
+    <TextView
+        android:id="@+id/lblRace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblRace" />
+
+    <EditText
+        android:id="@+id/txtRace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType=""/>
+
+    <TextView
+        android:id="@+id/lblLvl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblLvl" />
+
+    <EditText
+        android:id="@+id/txtLvl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType=""/>
+
+    <TextView
+        android:id="@+id/lblCreated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblCreated" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnDate" />
+
+    <EditText
+        android:id="@+id/txtCreated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType=""/>
+
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSave" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnDelete"
+        android:visibility="gone"/>
+</LinearLayout>

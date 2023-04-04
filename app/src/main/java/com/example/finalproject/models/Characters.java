@@ -19,6 +19,14 @@ public class Characters {
         this.created = created;
     }
 
+    public Characters(String name, String build, String race, long lvl, Date date) {
+        this.name = name;
+        this.build = build;
+        this.race = race;
+        this.lvl = lvl;
+        this.created = date;
+    }
+
 
     public long getId() {
         return id;
