@@ -140,6 +140,14 @@ public class CharactersDetailsActivity extends AppCompatActivity {
         if(txtLvl.getText().toString().isEmpty()){
             isValid = false;
             txtLvl.setError("You must enter a level");
+        }else{
+
+            try{
+                int newLvl = Integer.parseInt(txtLvl.getText().toString());
+            }catch(Exception e){
+                isValid = false;
+                txtLvl.setError("You must enter a number");
+            }
         }
 
         Date createdDate = null;
@@ -267,14 +275,6 @@ public class CharactersDetailsActivity extends AppCompatActivity {
         dp.show();
     }
 
-    private String checkLength(int date){
-        String newCheck = String.valueOf(date + 1);
-        if(newCheck.length() == 1){
-            newCheck = "0" + newCheck;
-        }
-
-        return newCheck;
-    }
 
 
 }
